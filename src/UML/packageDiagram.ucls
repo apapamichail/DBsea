@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <package id="1" language="java" name="gr.uoi.cs.dbsea.generalchecks" 
+    project="SchemaEvolutionSuite_Phase2_WithNormalization" 
+    file="/SchemaEvolutionSuite_Phase2_WithNormalization/src/gr/uoi/cs/dbsea/generalchecks" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="232" y="553"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="2" language="java" name="gr.uoi.cs.dbsea" project="SchemaEvolutionSuite_Phase2_WithNormalization" 
+    file="/SchemaEvolutionSuite_Phase2_WithNormalization/src/gr/uoi/cs/dbsea" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="436" y="55"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="3" language="java" name="gr.uoi.cs.dbsea.columnsstylecheck" 
+    project="SchemaEvolutionSuite_Phase2_WithNormalization" 
+    file="/SchemaEvolutionSuite_Phase2_WithNormalization/src/gr/uoi/cs/dbsea/columnsstylecheck" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="461" y="441"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="4" language="java" name="gr.uoi.cs.dbsea.tablestylecheck" 
+    project="SchemaEvolutionSuite_Phase2_WithNormalization" 
+    file="/SchemaEvolutionSuite_Phase2_WithNormalization/src/gr/uoi/cs/dbsea/tablestylecheck" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="134" y="437"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="5" language="java" name="gr.uoi.cs.dbsea.wordnetchecks" 
+    project="SchemaEvolutionSuite_Phase2_WithNormalization" 
+    file="/SchemaEvolutionSuite_Phase2_WithNormalization/src/gr/uoi/cs/dbsea/wordnetchecks" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="123" y="702"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="6" language="java" name="gr.uoi.cs.dbsea.parser" project="SchemaEvolutionSuite_Phase2_WithNormalization" 
+    file="/SchemaEvolutionSuite_Phase2_WithNormalization/src/gr/uoi/cs/dbsea/parser" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="453" y="332"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="7" language="java" name="gr.uoi.cs.dbsea.sql" project="SchemaEvolutionSuite_Phase2_WithNormalization" 
+    file="/SchemaEvolutionSuite_Phase2_WithNormalization/src/gr/uoi/cs/dbsea/sql" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="715" y="435"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="8" language="java" name="gr.uoi.cs.dbsea.statistics" 
+    project="SchemaEvolutionSuite_Phase2_WithNormalization" 
+    file="/SchemaEvolutionSuite_Phase2_WithNormalization/src/gr/uoi/cs/dbsea/statistics" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="402" y="699"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="9" language="java" name="gr.uoi.cs.dbsea.stylecore" 
+    project="SchemaEvolutionSuite_Phase2_WithNormalization" 
+    file="/SchemaEvolutionSuite_Phase2_WithNormalization/src/gr/uoi/cs/dbsea/stylecore" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="460" y="235"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="10" language="java" name="gr.uoi.cs.dbsea.gui" project="SchemaEvolutionSuite_Phase2_WithNormalization" 
+    file="/SchemaEvolutionSuite_Phase2_WithNormalization/src/gr/uoi/cs/dbsea/gui" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="463" y="141"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

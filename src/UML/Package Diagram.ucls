@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.2" icons="true" always-add-relationships="true" generalizations="true" realizations="true" 
+  associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <package id="1" language="java" name="gr.uoi.cs.dbsea.wordnetchecks" 
+    project="SchemaEvolutionSuite_Phase2_WithNormalization" 
+    file="/SchemaEvolutionSuite_Phase2_WithNormalization/src/gr/uoi/cs/dbsea/wordnetchecks" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="686" y="423"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="2" language="java" name="gr.uoi.cs.dbsea.generalchecks" 
+    project="SchemaEvolutionSuite_Phase2_WithNormalization" 
+    file="/SchemaEvolutionSuite_Phase2_WithNormalization/src/gr/uoi/cs/dbsea/generalchecks" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="212" x="330" y="397"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="3" language="java" name="gr.uoi.cs.dbsea" project="SchemaEvolutionSuite_Phase2_WithNormalization" 
+    file="/SchemaEvolutionSuite_Phase2_WithNormalization/src/gr/uoi/cs/dbsea" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="202" y="64"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="4" language="java" name="gr.uoi.cs.dbsea.columnsstylecheck" 
+    project="SchemaEvolutionSuite_Phase2_WithNormalization" 
+    file="/SchemaEvolutionSuite_Phase2_WithNormalization/src/gr/uoi/cs/dbsea/columnsstylecheck" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="238" x="351" y="487"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="5" language="java" name="gr.uoi.cs.dbsea.tablestylecheck" 
+    project="SchemaEvolutionSuite_Phase2_WithNormalization" 
+    file="/SchemaEvolutionSuite_Phase2_WithNormalization/src/gr/uoi/cs/dbsea/tablestylecheck" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="217" x="330" y="307"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="6" language="java" name="gr.uoi.cs.dbsea.parser" project="SchemaEvolutionSuite_Phase2_WithNormalization" 
+    file="/SchemaEvolutionSuite_Phase2_WithNormalization/src/gr/uoi/cs/dbsea/parser" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="202" y="336"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="7" language="java" name="gr.uoi.cs.dbsea.sql" project="SchemaEvolutionSuite_Phase2_WithNormalization" 
+    file="/SchemaEvolutionSuite_Phase2_WithNormalization/src/gr/uoi/cs/dbsea/sql" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="192" y="426"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="8" language="java" name="gr.uoi.cs.dbsea.statistics" 
+    project="SchemaEvolutionSuite_Phase2_WithNormalization" 
+    file="/SchemaEvolutionSuite_Phase2_WithNormalization/src/gr/uoi/cs/dbsea/statistics" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="180" x="311" y="577"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="9" language="java" name="gr.uoi.cs.dbsea.stylecore" 
+    project="SchemaEvolutionSuite_Phase2_WithNormalization" 
+    file="/SchemaEvolutionSuite_Phase2_WithNormalization/src/gr/uoi/cs/dbsea/stylecore" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="382" y="194"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="10" language="java" name="gr.uoi.cs.dbsea.gui" project="SchemaEvolutionSuite_Phase2_WithNormalization" 
+    file="/SchemaEvolutionSuite_Phase2_WithNormalization/src/gr/uoi/cs/dbsea/gui" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="189" y="156"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <dependency id="11">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="12">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="13">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="14">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="15">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="16">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="17">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="18">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="19">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="20">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="21">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="22">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="23">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="24">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="25">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="26">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="27">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="28">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="29">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="30">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="31">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="32">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="33">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="34">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
