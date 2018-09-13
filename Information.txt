@@ -1,0 +1,2 @@
+The paths where the csv files will be exported are hard coded. One should go to 
+SchemaStyleAnalysis class and change them manually untill later versions.

@@ -1,0 +1,4 @@
+commons-math 3.6.1 http://commons.apache.org/proper/commons-math/
+jaws-bin  http://www.java2s.com/Code/Jar/j/Downloadjawsbinjar.htm
+simplenlg 4.4.3 https://github.com/simplenlg/simplenlg
+stanford-english-corenlp https://stanfordnlp.github.io/CoreNLP/
