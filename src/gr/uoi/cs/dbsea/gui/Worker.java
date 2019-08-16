@@ -40,9 +40,8 @@ public class Worker extends SwingWorker<SchemaStyleAnalysis, Integer> {
 	 */
 	private void checkTheDifferencesInHistory(SchemaStyleAnalysis differencesManager) throws IOException {
 
-		//differencesManager.checkDifferencesInSchemataHistoryAndExport(folder);
 		differencesManager.traversePaths(folder);
-
+			
 	}
 
 	

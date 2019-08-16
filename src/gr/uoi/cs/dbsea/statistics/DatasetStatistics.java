@@ -118,7 +118,7 @@ public class DatasetStatistics {
 
 			WriteMeasurementsToFile();
 
-			//TableWriter.flush();
+		//TableWriter.flush();
 		//	ColumnWriter.flush();
 
 		} catch (Exception e) {
@@ -218,99 +218,7 @@ public class DatasetStatistics {
 			ColumnWriter = writeCorrelation(columnS, TotalColumns, ColumnTitle.replace(",Database Name", "").split(","),
 					ColumnWriter);
 
-			// TableWriter.append("Kendall," + TableTitle.replace(",Database Name", ""));
-			// ColumnWriter.append("\n");
-			// ColumnWriter.append("Kendall," + ColumnTitle.replace(",Database Name", ""));
-			// ColumnWriter.append("\n");
-			//
-			// if (tableK.length != TableTitleSize) {
-			// System.out.println("tableK.length!=TableTitleSize");
-			// System.exit(9);
-			// }
-			// TableWriter.append("\n");
-			//
-			// for (int i = 0; i < tableK.length; i++) {
-			// TableWriter.append(TableTitleRow[i] + ",");
-			// for (int j = 0; j < tableK[i].length; j++) {
-			// if (i >= j) {
-			// continue;
-			// }
-			// if (nan.equals(tableK[i][j])) {
-			//
-			// } else {
-			// TableWriter.append(Double.toString(Precision.round(tableK[i][j], 2)));
-			// }
-			// if (j < tableK[i].length - 1) {
-			// TableWriter.append(",");
-			// }
-			// }
-			// TableWriter.append("\n");
-			// }
-			// for (int i = 0; i < columnK.length; i++) {
-			// ColumnWriter.append(ColumnTitleRow[i] + ",");
-			// for (int j = 0; j < columnK[i].length; j++) {
-			// if (i >= j) {
-			// continue;
-			// }
-			// if (Double.toString(columnK[i][j]).equals("NaN")) {
-			// } else {
-			// ColumnWriter.append(Double.toString(Precision.round(columnK[i][j], 2)));
-			//
-			// }
-			// if (j < columnK[i].length - 1) {
-			// ColumnWriter.append(",");
-			// }
-			// }
-			// ColumnWriter.append("\n");
-			// }
-			//
-			// /// Spearman
-			// TableWriter.append("Spearman," + TableTitle.replace(",Database Name", ""));
-			// TableWriter.append("\n");
-			//
-			// for (int i = 0; i < tableS.length; i++) {
-			// TableWriter.append(TableTitleRow[i] + ",");
-			// for (int j = 0; j < tableS[i].length; j++) {
-			// if (i >= j) {
-			// continue;
-			// }
-			// if (Double.toString(tableS[i][j]).equals("NaN")) {
-			// } else {
-			// TableWriter.append(Double.toString(Precision.round(tableS[i][j], 2)));
-			// }
-			// if (j < tableS[i].length - 1) {
-			// TableWriter.append(",");
-			// }
-			// }
-			// TableWriter.append("\n");
-			//
-			// }
-			// TableWriter.append("\n");
-			//
-			// ColumnWriter.append("\n");
-			// ColumnWriter.append("Spearman," + ColumnTitle.replace(",Database Name", ""));
-			// ColumnWriter.append("\n");
-			//
-			// for (int i = 0; i < columnS.length; i++) {
-			// ColumnWriter.append(ColumnTitleRow[i] + ",");
-			//
-			// for (int j = 0; j < columnS[i].length; j++) {
-			// if (i >= j) {
-			// continue;
-			// }
-			// if (nan.equals(columnS[i][j])) {
-			//
-			// } else {
-			// ColumnWriter.append(Double.toString(Precision.round(columnS[i][j], 2)));
-			// }
-			// if (j < columnS[i].length - 1) {
-			// ColumnWriter.append(",");
-			// }
-			// }
-			// ColumnWriter.append("\n");
-			//
-			// }
-			//
+	
 			TableWriter.append("\n");
 			ColumnWriter.append("\n");
 		} catch (Exception e) {
@@ -320,125 +228,7 @@ public class DatasetStatistics {
 		}
 	}
 
-	// private void WriteCorrelations() throws IOException {
-	//
-	// try {
-	// KendallsCorrelation tableKendall = new
-	// KendallsCorrelation(TableMeasurements);
-	//
-	// KendallsCorrelation columnKendall = new
-	// KendallsCorrelation(ColumnMeasurements);
-	// SpearmansCorrelation tableSpearman = new SpearmansCorrelation();
-	// SpearmansCorrelation columnSpearman = new SpearmansCorrelation();
-	//
-	// double[][] tableK = tableKendall.getCorrelationMatrix().getData();
-	// double[][] columnK = columnKendall.getCorrelationMatrix().getData();
-	//
-	// double[][] tableS =
-	// tableSpearman.computeCorrelationMatrix(TableMeasurements).getData();
-	// double[][] columnS =
-	// columnSpearman.computeCorrelationMatrix(ColumnMeasurements).getData();
-	//
-	// TableWriter.append("Kendall," + TableTitle.replace(",Database Name", ""));
-	// ColumnWriter.append("\n");
-	// ColumnWriter.append("Kendall," + ColumnTitle.replace(",Database Name", ""));
-	// ColumnWriter.append("\n");
-	//
-	// if (tableK.length != TableTitleSize) {
-	// System.out.println("tableK.length!=TableTitleSize");
-	// System.exit(9);
-	// }
-	// TableWriter.append("\n");
-	//
-	// for (int i = 0; i < tableK.length; i++) {
-	// TableWriter.append(TableTitleRow[i] + ",");
-	// for (int j = 0; j < tableK[i].length; j++) {
-	// if (i >= j) {
-	// continue;
-	// }
-	// if (nan.equals(tableK[i][j])) {
-	//
-	// } else {
-	// TableWriter.append(Double.toString(Precision.round(tableK[i][j], 2)));
-	// }
-	// if (j < tableK[i].length - 1) {
-	// TableWriter.append(",");
-	// }
-	// }
-	// TableWriter.append("\n");
-	// }
-	// for (int i = 0; i < columnK.length; i++) {
-	// ColumnWriter.append(ColumnTitleRow[i] + ",");
-	// for (int j = 0; j < columnK[i].length; j++) {
-	// if (i >= j) {
-	// continue;
-	// }
-	// if (Double.toString(columnK[i][j]).equals("NaN")) {
-	// } else {
-	// ColumnWriter.append(Double.toString(Precision.round(columnK[i][j], 2)));
-	//
-	// }
-	// if (j < columnK[i].length - 1) {
-	// ColumnWriter.append(",");
-	// }
-	// }
-	// ColumnWriter.append("\n");
-	// }
-	//
-	// /// Spearman
-	// TableWriter.append("Spearman," + TableTitle.replace(",Database Name", ""));
-	// TableWriter.append("\n");
-	//
-	// for (int i = 0; i < tableS.length; i++) {
-	// TableWriter.append(TableTitleRow[i] + ",");
-	// for (int j = 0; j < tableS[i].length; j++) {
-	// if (i >= j) {
-	// continue;
-	// }
-	// if (Double.toString(tableS[i][j]).equals("NaN")) {
-	// } else {
-	// TableWriter.append(Double.toString(Precision.round(tableS[i][j], 2)));
-	// }
-	// if (j < tableS[i].length - 1) {
-	// TableWriter.append(",");
-	// }
-	// }
-	// TableWriter.append("\n");
-	//
-	// }
-	// TableWriter.append("\n");
-	//
-	// ColumnWriter.append("\n");
-	// ColumnWriter.append("Spearman," + ColumnTitle.replace(",Database Name", ""));
-	// ColumnWriter.append("\n");
-	//
-	// for (int i = 0; i < columnS.length; i++) {
-	// ColumnWriter.append(ColumnTitleRow[i] + ",");
-	//
-	// for (int j = 0; j < columnS[i].length; j++) {
-	// if (i >= j) {
-	// continue;
-	// }
-	// if (nan.equals(columnS[i][j])) {
-	//
-	// } else {
-	// ColumnWriter.append(Double.toString(Precision.round(columnS[i][j], 2)));
-	// }
-	// if (j < columnS[i].length - 1) {
-	// ColumnWriter.append(",");
-	// }
-	// }
-	// ColumnWriter.append("\n");
-	//
-	// }
-	//
-	// TableWriter.append("\n");
-	// ColumnWriter.append("\n");
-	// } catch (Exception e) {
-	// System.out.println(e.getMessage());
-	// }
-	// }
-
+	
 	private FileWriter writeCorrelation(double[][] correlationValues, Double[] Measurements, String title[],
 			FileWriter writer) {
 		try {
@@ -881,7 +671,7 @@ public class DatasetStatistics {
 					continue;
 				}
 				tableRecords.add(line);
-				if (index > 0 && line.split(",").length > 0) {
+				if (index > 0 && line.split(",").length > 1) {
 					try {
 						totalTables.add(Double.parseDouble(line.split(",")[0]));
 					} catch (Exception ex) {
@@ -900,7 +690,7 @@ public class DatasetStatistics {
 					continue;
 				}
 				columnRecords.add(line);
-				if (index > 0 && line.split(",").length > 0) {
+				if (index > 0 && line.split(",").length > 1) {
 					try {
 						totalColumns.add(Double.parseDouble(line.split(",")[0]));
 					} catch (Exception ex) {

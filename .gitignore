@@ -1,6 +1,7 @@
 #Ignore folders 
 libs/*
 bin/*
+Results/*
 
 #Ignore the logger
 Log.txt
