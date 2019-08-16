@@ -16,8 +16,8 @@ import javax.swing.JLabel;
 import gr.uoi.cs.dbsea.DBsea;
 
 /**
- * A dialog displaying information
- * @author Papamichail Aggelos
+ * A dialog displaying Hecates information
+ * @author giskou
  *
  */
 @SuppressWarnings("serial")

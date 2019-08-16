@@ -3,14 +3,8 @@ package gr.uoi.cs.dbsea.columnsstylecheck;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 
+import gr.uoi.cs.dbsea.logger.Logger;
 
-/**
- * 
- * @author Papamichail Aggelos
- *
- *Common suffixes as found in Joe Celko's book.
- * SQL Programming Style
- */
 public final class UniformSuffixes {
 
 	public final String id="id";//—a unique identifier such as a column that is a primary key.
@@ -26,10 +20,16 @@ public final class UniformSuffixes {
 	public  static ArrayList<String> suffixes;
 	
 	public static void SetUpListWithSuffixes() {
-		suffixes = new ArrayList<String>();
-		Field[] fields = UniformSuffixes.class.getFields();
-		for (Field variable : fields) {
-			suffixes.add(variable.getName());
+		try {
+			suffixes = new ArrayList<String>();
+			Field[] fields = UniformSuffixes.class.getFields();
+			for (Field variable : fields) {
+				suffixes.add(variable.getName());
+			}
+		} catch (SecurityException e) {
+
+			Logger.Log(e);
+
 		}
 	}
 

@@ -3,23 +3,10 @@ package gr.uoi.cs.dbsea.gui;
 import java.awt.GridLayout;
 
 import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.event.TreeExpansionEvent;
-import javax.swing.event.TreeExpansionListener;
-import javax.swing.tree.TreePath;
-
-import org.netbeans.swing.outline.DefaultOutlineModel;
-import org.netbeans.swing.outline.Outline;
-import org.netbeans.swing.outline.OutlineModel;
-import org.netbeans.swing.outline.TreePathSupport;
-
-import gr.uoi.cs.dbsea.sql.Schema;
-import gr.uoi.cs.dbsea.sql.Table;
-
 /**
  * This Panel contains two panes with the original and the modified
  * version of the generated trees of the schemas.
- * @author Papamichail Aggelos
+ * @author giskou
  *
  */
 @SuppressWarnings("serial")

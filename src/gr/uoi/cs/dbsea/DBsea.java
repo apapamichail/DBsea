@@ -1,12 +1,13 @@
 package gr.uoi.cs.dbsea;
-import java.io.IOException;
+
 
 import gr.uoi.cs.dbsea.gui.MainWindow;
+import gr.uoi.cs.dbsea.logger.Logger;
 
 /**
  * This is the class that contains the main function
- * for DBsea.
- * @author Papamichail Aggelos
+ * for Hecate.
+ * @author giskou
  */
 public class DBsea{
 
@@ -16,8 +17,10 @@ public class DBsea{
 	 * @param args 
 	 */
 	public static void main(String[] args)  {
-		//test t =new test();
+		
+		Logger.Initialize();
 		mainWindow = new MainWindow();
 		mainWindow.setVisible(true);
+		
 	}
 }

@@ -16,15 +16,13 @@ import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import javax.swing.UIManager.LookAndFeelInfo;
-
-import org.antlr.v4.runtime.RecognitionException;
-
 import gr.uoi.cs.dbsea.DBsea;
+import gr.uoi.cs.dbsea.logger.Logger;
 
   
 /**
- * 
- * @author Papamichail Aggelos
+ * The main window of Hecate
+ * @author giskou
  *
  */
 @SuppressWarnings("serial")
@@ -92,81 +90,87 @@ public class MainWindow extends JFrame{
 	 * Creates the windows menu
 	 */
 	private void createMenu() {
-		menuBar = new JMenuBar();
-		// File
-		file = new JMenu("File");
-		file.setMnemonic(KeyEvent.VK_F);
-		//File->Open Folder
-		fileFOpen = new JMenuItem("Open Folder...");
-		fileFOpen.setMnemonic(KeyEvent.VK_F);
-		fileFOpen.setToolTipText("Create diff tree from multiple files");
-		fileFOpen.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent event) {
-				if (openFolderDialog == null) {
-					openFolderDialog = new OpenFolderDialog();
-				}
-				openFolderDialog.setVisible(true);
-				if (openFolderDialog.getStatus() != 0) {
-					String path = openFolderDialog.getFolder();
-					File dir = new File(path);
-					try {
-						Worker task = new Worker(dir);
-						task.execute();
-						task.get();
-					
-					} catch (Exception e) {
-						e.printStackTrace();
+		try {
+			menuBar = new JMenuBar();
+			// File
+			file = new JMenu("File");
+			file.setMnemonic(KeyEvent.VK_F);
+			//File->Open Folder
+			fileFOpen = new JMenuItem("Open Folder...");
+			fileFOpen.setMnemonic(KeyEvent.VK_F);
+			fileFOpen.setToolTipText("Create diff tree from multiple files");
+			fileFOpen.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent event) {
+					if (openFolderDialog == null) {
+						openFolderDialog = new OpenFolderDialog();
 					}
-					ShowFinishMessage();
+					openFolderDialog.setVisible(true);
+					if (openFolderDialog.getStatus() != 0) {
+						String path = openFolderDialog.getFolder();
+						File dir = new File(path);
+						try {
+							Worker task = new Worker(dir);
+							task.execute();
+							task.get();
+						
+						} catch (Exception e) {
+							e.printStackTrace();
+						}
+						ShowFinishMessage();
 
+					}
 				}
-			}
-		});
-		
-		
-		file.add(fileFOpen);
-		// File->Close
-		fileClose = new JMenuItem("Close");
-		fileClose.setMnemonic(KeyEvent.VK_C);
-		
-		fileClose.setToolTipText("Exit application");
-		fileClose.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent event) {
-				System.exit(0);
-			}
-		});
-		file.add(fileClose);
-		menuBar.add(file);
-
-		// Help
-		help = new JMenu("Help");
-		help.setMnemonic(KeyEvent.VK_H);
-		// Help->About
-		helpAbout = new JMenuItem("About");
-		helpAbout.setMnemonic(KeyEvent.VK_A);
-		helpAbout.setToolTipText("About Hecate");
-		helpAbout.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent event) {
-				aboutDialog = new AboutDialog();
-				aboutDialog.setVisible(true);
-			}
+			});
 			
-		});
-		// Help->Instructions
-				Instructions = new JMenuItem("Instructions");
-				Instructions.setMnemonic(KeyEvent.VK_A);
-				Instructions.setToolTipText("Instructions");
-				Instructions.addActionListener(new ActionListener() {
-					public void actionPerformed(ActionEvent event) {
-						instructionsDialog = new InstructionsDialog();
-						instructionsDialog.setVisible(true);
-					}
-					});
-		help.add(Instructions);
-		help.add(helpAbout);
-		menuBar.add(help);
-		
-		setJMenuBar(menuBar);
+			
+			file.add(fileFOpen);
+			// File->Close
+			fileClose = new JMenuItem("Close");
+			fileClose.setMnemonic(KeyEvent.VK_C);
+			
+			fileClose.setToolTipText("Exit application");
+			fileClose.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent event) {
+					System.exit(0);
+				}
+			});
+			file.add(fileClose);
+			menuBar.add(file);
+
+			// Help
+			help = new JMenu("Help");
+			help.setMnemonic(KeyEvent.VK_H);
+			// Help->About
+			helpAbout = new JMenuItem("About");
+			helpAbout.setMnemonic(KeyEvent.VK_A);
+			helpAbout.setToolTipText("About Hecate");
+			helpAbout.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent event) {
+					aboutDialog = new AboutDialog();
+					aboutDialog.setVisible(true);
+				}
+				
+			});
+			// Help->Instructions
+					Instructions = new JMenuItem("Instructions");
+					Instructions.setMnemonic(KeyEvent.VK_A);
+					Instructions.setToolTipText("Instructions");
+					Instructions.addActionListener(new ActionListener() {
+						public void actionPerformed(ActionEvent event) {
+							instructionsDialog = new InstructionsDialog();
+							instructionsDialog.setVisible(true);
+						}
+						});
+			help.add(Instructions);
+			help.add(helpAbout);
+			menuBar.add(help);
+			
+			setJMenuBar(menuBar);
+		} catch (Exception e) {
+			
+			Logger.Log(e);
+
+			}
 	}
 	
 	/**

@@ -6,13 +6,12 @@ import java.util.ArrayList;
 import java.util.Map.Entry;
 import java.util.regex.Pattern;
 
-import javax.swing.ProgressMonitor;
 
-import org.apache.commons.math3.stat.correlation.KendallsCorrelation;
 
 import gr.uoi.cs.dbsea.columnsstylecheck.ColumnCheck;
 import gr.uoi.cs.dbsea.columnsstylecheck.UniformSuffixes;
 import gr.uoi.cs.dbsea.generalchecks.ReservedWords;
+import gr.uoi.cs.dbsea.logger.Logger;
 import gr.uoi.cs.dbsea.parser.SESParser;
 import gr.uoi.cs.dbsea.sql.Attribute;
 import gr.uoi.cs.dbsea.sql.Schema;
@@ -35,9 +34,6 @@ public class SchemaStyleAnalysis {
 	public void checkSchemaHistoryStyleByRuleAndExport(File folder) throws IOException {
 		try {
 
-			// MetricsExport metricsExport2 = new MetricsExport();
-			// csvExport exportToCSV = new csvExport();
-			// xmlExport exportToXML = new xmlExport();
 			// Schema Evolution Suite
 			TableCheck tableCheck = new TableCheck();
 			ColumnCheck columnCheck = new ColumnCheck();
@@ -45,9 +41,9 @@ public class SchemaStyleAnalysis {
 
 			String[] folders = folder.list();
 			String pattern = Pattern.quote(System.getProperty("file.separator"));
-			String columnPath="C:\\Users\\angelo\\Desktop\\Statistics5\\ColumnStatistics\\ColumnsStatistics-"
+			String columnPath="C:\\Users\\aggelos\\Desktop\\Statistics\\ColumnStatistics\\ColumnsStatistics-"
 					+  path.split(pattern)[path.split(pattern).length - 3]+path.split(pattern)[path.split(pattern).length - 2] + "-.csv";
-			String tablePath = "C:\\Users\\angelo\\Desktop\\Statistics5\\TableStatistics\\TableStatistics-"
+			String tablePath = "C:\\Users\\aggelos\\Desktop\\Statistics\\TableStatistics\\TableStatistics-"
 					+  path.split(pattern)[path.split(pattern).length - 3]+path.split(pattern)[path.split(pattern).length - 2] + "-.csv";
 			columnCheck.setStatisticsFile(columnPath,
 					columnPath);
@@ -57,14 +53,14 @@ public class SchemaStyleAnalysis {
 					tablePath);
 			tableCheck.SetFileTitle(tablePath);
 			
-			TablePrefixes.SetUpListWithSuffixes();
+			TablePrefixes.setUpListWithPrefixes();
 			UniformSuffixes.SetUpListWithSuffixes();
 
 			java.util.Arrays.sort(folders);
 
 			ReservedWords.SetReservedWords();
 			for (int i = 0; i < folders.length - 1; i++) {
-				// result.clear();
+
 				System.out.println(path + File.separator + folders[i]);
 				Schema schemaA = getSchema(path + File.separator + folders[i]);
  
@@ -88,10 +84,9 @@ public class SchemaStyleAnalysis {
 						tablesInSchema.add(tableName);
 					}
 				} catch (Exception e) {
-					// TODO: handle exception
-					// System.out.println(e.fillInStackTrace()));
-					e.fillInStackTrace();
-					e.getStackTrace();
+
+					Logger.Log(e);
+					
 				}
 				tableCheck.nameConcatenation(tablesInSchema);
 				tableCheck.dataSetName = path.split(pattern)[path.split(pattern).length - 2];
@@ -102,15 +97,6 @@ public class SchemaStyleAnalysis {
 				tableCheck.writeStatistics(tablePath);
 				tableCheck.clearStatistics();
 
-				// transitions.add(result.myTransformationList);
-				// resultList.add(result);
-				// // metricsExport.metrics(result, path);
-				// tableinfo = result.tablesInfo;
-				// versions = result.myMetrics.getNumRevisions() + 1;
-				
-//				columnCheck.IncreaseRevisionIndex(columnPath);
-//				tableCheck
-//						.IncreaseRevisionIndex(tablePath);
 			}
 			columnCheck.clearStatistics();
 			tableCheck.clearStatistics();
@@ -118,19 +104,11 @@ public class SchemaStyleAnalysis {
 			DatasetStatistics a =new DatasetStatistics(tablePath, columnPath);
 			a.FillMeasurements();
 
-			/*
-			 * 
-			 * MEASURE THE STATISTICS
-			 */
-			
-			// for(int i=0; i < resultList.size(); i++){
-			// metricsExport.metrics(resultList.get(i), path);
-			// }
-			// metrics.exportInformation(resultList, path);
 			System.out.println("Finished!");
-			// System.exit(55);
-		} catch (Exception ex) {
-			System.out.println(ex.getMessage());
+		} catch (Exception e) {
+			
+			Logger.Log(e);
+			
 		}
 	}
 
@@ -144,28 +122,26 @@ public class SchemaStyleAnalysis {
 			String[] folders = folder.list();
 			String pattern = Pattern.quote(System.getProperty("file.separator"));
 			columnCheck.setStatisticsFile(
-					"C:\\Users\\angelo\\Desktop\\StatisticsTables\\ColumnStatistics\\ColumnsStatistics-"
+					"C:\\Users\\aggelos\\Desktop\\StatisticsTables\\ColumnStatistics\\ColumnsStatistics-"
 							+  path.split(pattern)[path.split(pattern).length - 3]+path.split(pattern)[path.split(pattern).length - 2] + "-.csv",
-					"C:\\Users\\angelo\\Desktop\\StatisticsTables\\ColumnStatistics\\ColumnsStatistics-"
+					"C:\\Users\\aggelos\\Desktop\\StatisticsTables\\ColumnStatistics\\ColumnsStatistics-"
 							+  path.split(pattern)[path.split(pattern).length - 3]+path.split(pattern)[path.split(pattern).length - 2] + "-.csv");
 			columnCheck
-					.setFileTitle("C:\\Users\\angelo\\Desktop\\StatisticsTables\\ColumnStatistics\\ColumnsStatistics-"
+					.setFileTitle("C:\\Users\\aggelos\\Desktop\\StatisticsTables\\ColumnStatistics\\ColumnsStatistics-"
 							+  path.split(pattern)[path.split(pattern).length - 3]+path.split(pattern)[path.split(pattern).length - 2] + "-.csv");
 			tableCheck.setStatisticsFile(
-					"C:\\Users\\angelo\\Desktop\\StatisticsTables\\TableStatistics\\TableStatistics-"
+					"C:\\Users\\aggelos\\Desktop\\StatisticsTables\\TableStatistics\\TableStatistics-"
 							+  path.split(pattern)[path.split(pattern).length - 3]+path.split(pattern)[path.split(pattern).length - 2] + "-.csv",
-					"C:\\Users\\angelo\\Desktop\\StatisticsTables\\TableStatistics\\TableStatistics-"
+					"C:\\Users\\aggelos\\Desktop\\StatisticsTables\\TableStatistics\\TableStatistics-"
 							+  path.split(pattern)[path.split(pattern).length - 3]+path.split(pattern)[path.split(pattern).length - 2] + "-.csv");
 
-			tableCheck.SetFileTitle("C:\\Users\\angelo\\Desktop\\StatisticsTables\\TableStatistics\\TableStatistics-"
+			tableCheck.SetFileTitle("C:\\Users\\aggelos\\Desktop\\StatisticsTables\\TableStatistics\\TableStatistics-"
 					+  path.split(pattern)[path.split(pattern).length - 3]+path.split(pattern)[path.split(pattern).length - 2] + "-.csv");
 
-			TablePrefixes.SetUpListWithSuffixes();
+			TablePrefixes.setUpListWithPrefixes();
 			UniformSuffixes.SetUpListWithSuffixes();
 
 			java.util.Arrays.sort(folders);
-
-			// metricsExport.initMetrics(path);
 
 			ReservedWords.SetReservedWords();
 			for (int i = 0; i < folders.length - 1; i++) {
@@ -196,11 +172,11 @@ public class SchemaStyleAnalysis {
 						columnCheck.dataSetName = tableName;
 
 						columnCheck.writeStatistics(
-								"C:\\Users\\angelo\\Desktop\\StatisticsTables\\ColumnStatistics\\ColumnsStatistics-"
+								"C:\\Users\\aggelos\\Desktop\\StatisticsTables\\ColumnStatistics\\ColumnsStatistics-"
 										+  path.split(pattern)[path.split(pattern).length - 3]+path.split(pattern)[path.split(pattern).length - 2] + "-.csv");
 						columnCheck.clearStatistics();
 						tableCheck.writeStatistics(
-								"C:\\Users\\angelo\\Desktop\\StatisticsTables\\TableStatistics\\TableStatistics-"
+								"C:\\Users\\aggelos\\Desktop\\StatisticsTables\\TableStatistics\\TableStatistics-"
 										+  path.split(pattern)[path.split(pattern).length - 3]+path.split(pattern)[path.split(pattern).length - 2] + "-.csv");
 						tableCheck.clearStatistics();
 
@@ -212,22 +188,24 @@ public class SchemaStyleAnalysis {
 		
 			
 				columnCheck.IncreaseRevisionIndex(
-						"C:\\Users\\angelo\\Desktop\\StatisticsTables\\ColumnStatistics\\ColumnsStatistics-"
+						"C:\\Users\\aggelos\\Desktop\\StatisticsTables\\ColumnStatistics\\ColumnsStatistics-"
 								+  path.split(pattern)[path.split(pattern).length - 3]+path.split(pattern)[path.split(pattern).length - 2] + "-.csv");
 				tableCheck
-						.IncreaseRevisionIndex("C:\\Users\\angelo\\Desktop\\StatisticsTables\\TableStatistics\\TableStatistics-"
+						.IncreaseRevisionIndex("C:\\Users\\aggelos\\Desktop\\StatisticsTables\\TableStatistics\\TableStatistics-"
 								+  path.split(pattern)[path.split(pattern).length - 3]+path.split(pattern)[path.split(pattern).length - 2] + "-.csv");
 }
 			columnCheck.clearStatistics();
 			tableCheck.clearStatistics();
-			DatasetStatistics a =new DatasetStatistics("C:\\Users\\angelo\\Desktop\\StatisticsTables\\TableStatistics\\TableStatistics-"
-					+  path.split(pattern)[path.split(pattern).length - 3]+path.split(pattern)[path.split(pattern).length - 2] + "-.csv", "C:\\Users\\angelo\\Desktop\\StatisticsTables\\ColumnStatistics\\ColumnsStatistics-"
+			DatasetStatistics a =new DatasetStatistics("C:\\Users\\aggelos\\Desktop\\StatisticsTables\\TableStatistics\\TableStatistics-"
+					+  path.split(pattern)[path.split(pattern).length - 3]+path.split(pattern)[path.split(pattern).length - 2] + "-.csv", "C:\\Users\\aggelos\\Desktop\\StatisticsTables\\ColumnStatistics\\ColumnsStatistics-"
 					+  path.split(pattern)[path.split(pattern).length - 3]+path.split(pattern)[path.split(pattern).length - 2] + "-.csv");
 			a.FillMeasurements();
 
 			System.out.println("Finished!");
-		} catch (Exception ex) {
-			System.out.println(ex.getMessage());
+		} catch (Exception e) {
+			
+			Logger.Log(e);
+			
 		}
 	}
 

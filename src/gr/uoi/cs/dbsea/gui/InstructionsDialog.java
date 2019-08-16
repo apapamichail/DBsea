@@ -2,7 +2,6 @@ package gr.uoi.cs.dbsea.gui;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Toolkit;
-import java.awt.Dialog.ModalityType;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -12,11 +11,7 @@ import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JLabel;
 
-/**
- * 
- * @author Papamichail Aggelos
- *
- */
+ 
 public class InstructionsDialog extends JDialog {
 	private JButton close;
 	private JLabel generalInformation;

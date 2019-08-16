@@ -5,11 +5,7 @@ import java.io.IOException;
 
 import org.apache.commons.math3.util.Precision;
 
-/**
- * 
- * @author Papamichail Aggelos
- *
- */
+
 public class GenericCheckStatistics {
 
 	private int setCaseType;

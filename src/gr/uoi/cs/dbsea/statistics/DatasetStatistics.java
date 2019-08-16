@@ -8,16 +8,12 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Stream;
 
-import org.apache.commons.math3.linear.RealMatrix;
 import org.apache.commons.math3.stat.Frequency;
-import org.apache.commons.math3.stat.StatUtils;
 import org.apache.commons.math3.stat.correlation.KendallsCorrelation;
 import org.apache.commons.math3.stat.correlation.SpearmansCorrelation;
-import org.apache.commons.math3.stat.descriptive.moment.Mean;
 import org.apache.commons.math3.stat.descriptive.moment.Skewness;
 import org.apache.commons.math3.stat.descriptive.moment.StandardDeviation;
 import org.apache.commons.math3.stat.descriptive.rank.Max;
@@ -28,12 +24,8 @@ import org.apache.commons.math3.util.Precision;
 
 import com.sun.org.apache.xpath.internal.operations.Bool;
 
-/** 
- * 
- * @author Papamichail Aggelos
- *
- * Statistics related to the dataset, correlations, averages etc.
- */
+import gr.uoi.cs.dbsea.logger.Logger;
+
 public class DatasetStatistics {
 
 	private String TablePath;
@@ -125,38 +117,47 @@ public class DatasetStatistics {
 			}
 
 			WriteMeasurementsToFile();
-			TableWriter.flush();
-			ColumnWriter.flush();
+
+			//TableWriter.flush();
+		//	ColumnWriter.flush();
 
 		} catch (Exception e) {
-			System.out.println(e.getMessage());
-			// TODO: handle exception
+			
+			Logger.Log(e);
+			
 		}
 	}
 
 	private void CreateStatisticTables(int tablesLength, int columnsLengths) {
-		SkewnessTables = new double[tablesLength];
-		SkewnessColumns = new double[columnsLengths];
+		
+		try {
+			SkewnessTables = new double[tablesLength];
+			SkewnessColumns = new double[columnsLengths];
 
-		STDTables = new double[tablesLength];// descriptive
-		STDColumns = new double[columnsLengths];
+			STDTables = new double[tablesLength];// descriptive
+			STDColumns = new double[columnsLengths];
 
-		MedianTables = new double[tablesLength];// descriptive
-		MedianColumns = new double[columnsLengths];
+			MedianTables = new double[tablesLength];// descriptive
+			MedianColumns = new double[columnsLengths];
 
-		MaxTables = new double[tablesLength];// rank
-		MinTables = new double[tablesLength];// rank
-		MaxColumns = new double[columnsLengths];// rank
-		MinColumns = new double[columnsLengths];
+			MaxTables = new double[tablesLength];// rank
+			MinTables = new double[tablesLength];// rank
+			MaxColumns = new double[columnsLengths];// rank
+			MinColumns = new double[columnsLengths];
 
-		SumTables = new double[tablesLength];// rank
-		SumColumns = new double[columnsLengths];
+			SumTables = new double[tablesLength];// rank
+			SumColumns = new double[columnsLengths];
 
-		AverageTables = new double[tablesLength];// rank
-		AverageColumns = new double[columnsLengths];
+			AverageTables = new double[tablesLength];// rank
+			AverageColumns = new double[columnsLengths];
 
-		ModeTables = new double[tablesLength];// rank user frequency for this one stat.Frequency
-		ModeColumns = new double[columnsLengths];
+			ModeTables = new double[tablesLength];// rank user frequency for this one stat.Frequency
+			ModeColumns = new double[columnsLengths];
+		} catch (Exception e) {
+			
+			Logger.Log(e);
+	
+		}
 
 	}
 
@@ -183,8 +184,9 @@ public class DatasetStatistics {
 			TableWriter.close();
 			ColumnWriter.close();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			System.out.println(e.getMessage());
+
+			Logger.Log(e);
+
 		}
 
 	}
@@ -312,7 +314,9 @@ public class DatasetStatistics {
 			TableWriter.append("\n");
 			ColumnWriter.append("\n");
 		} catch (Exception e) {
-			System.out.println(e.getMessage());
+	
+			Logger.Log(e);
+
 		}
 	}
 
@@ -504,8 +508,9 @@ public class DatasetStatistics {
 				writer.append("\n");
 			}
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		
+			Logger.Log(e);
+
 		}
 		return writer;
 
@@ -565,8 +570,10 @@ public class DatasetStatistics {
 			}
 			ColumnWriter.append("\n");
 
-		} catch (Exception ex) {
-			System.out.println("WriteSkewness Exception : " + ex.getMessage());
+		} catch (Exception e) {
+		
+			Logger.Log(e);
+	
 		}
 	}
 
@@ -575,8 +582,7 @@ public class DatasetStatistics {
 			try {
 				ColumnWriter.append(",");
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+				Logger.Log(e);
 			}
 		}
 	}
@@ -586,8 +592,7 @@ public class DatasetStatistics {
 			try {
 				TableWriter.append(",");
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+				Logger.Log(e);
 			}
 		}
 	}
@@ -627,8 +632,8 @@ public class DatasetStatistics {
 			}
 			ColumnWriter.append("\n");
 
-		} catch (Exception ex) {
-			System.out.println("WriteMean Exception : " + ex.getMessage());
+		} catch (Exception e) {
+			Logger.Log(e);
 		}
 	}
 
@@ -668,8 +673,8 @@ public class DatasetStatistics {
 			}
 			ColumnWriter.append("\n");
 
-		} catch (Exception ex) {
-			System.out.println("WriteSTD Exception : " + ex.getMessage());
+		} catch (Exception e) {
+			Logger.Log(e);
 		}
 	}
 
@@ -706,8 +711,8 @@ public class DatasetStatistics {
 			}
 			ColumnWriter.append("\n");
 
-		} catch (Exception ex) {
-			System.out.println("WriteSTD Exception : " + ex.getMessage());
+		} catch (Exception e) {
+			Logger.Log(e);
 		}
 	}
 
@@ -748,8 +753,8 @@ public class DatasetStatistics {
 			}
 			ColumnWriter.append("\n");
 
-		} catch (Exception ex) {
-			System.out.println("WriteMax Exception : " + ex.getMessage());
+		} catch (Exception e) {
+			Logger.Log(e);
 		}
 
 	}
@@ -858,8 +863,8 @@ public class DatasetStatistics {
 			}
 			ColumnWriter.append("\n");
 
-		} catch (Exception ex) {
-			System.out.println("WriteMode Exception : " + ex.getMessage());
+		} catch (Exception e) {
+			Logger.Log(e);
 		}
 
 	}
@@ -912,9 +917,7 @@ public class DatasetStatistics {
 			TotalColumns = totalColumns.toArray(TotalColumns);
 
 		} catch (Exception e) {
-			System.err.format("Exception occurred trying to read");
-
-			e.printStackTrace();
+			Logger.Log(e);
 
 		}
 	}

@@ -1,6 +1,5 @@
 package gr.uoi.cs.dbsea.statistics;
 
-import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 

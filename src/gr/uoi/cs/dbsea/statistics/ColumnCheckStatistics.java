@@ -1,17 +1,11 @@
 package gr.uoi.cs.dbsea.statistics;
 
-import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
 import org.apache.commons.math3.util.Precision;
 
-/**
- * 
- * @author Papamichail Aggelos
- *
- *	Keeps track of statistics related to column names.
- */
+
 public class ColumnCheckStatistics {
 
 	private double totalColumns = 0;
@@ -32,6 +26,12 @@ public class ColumnCheckStatistics {
 //	public int DatasetRevision=1;
 
 	public void SetFile(String path) {
+		try {
+			fw = new FileWriter(path, true);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		this.filePath = path;
 	
 	}

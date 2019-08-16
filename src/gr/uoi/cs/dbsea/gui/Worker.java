@@ -3,14 +3,10 @@
  */
 package gr.uoi.cs.dbsea.gui;
 
-import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
-
 import javax.swing.ProgressMonitor;
 import javax.swing.SwingWorker;
-
-import gr.uoi.cs.dbsea.sql.Schema;
 import gr.uoi.cs.dbsea.stylecore.SchemaStyleAnalysis;
 
 /**

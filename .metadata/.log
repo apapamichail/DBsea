@@ -1,0 +1,529 @@
+!SESSION 2017-04-26 14:47:01.828 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-26 14:47:39.370
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\DIMITRIS'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2017-04-26 14:49:09.010 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-26 14:49:33.232
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\DIMITRIS'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2017-04-26 14:52:46.469 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -data C:\Users\DIMITRIS\Desktop\Hecate -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-26 14:53:01.011
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\DIMITRIS'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2017-05-08 10:51:24.106 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.equinox.p2.reconciler.dropins 4 0 2017-05-08 10:51:26.646
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.start() of bundle org.eclipse.equinox.p2.reconciler.dropins.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:795)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:724)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:932)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:309)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1600)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+Caused by: java.lang.IllegalStateException: Registry Directory not available: c:\Program Files\java-neon\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry.
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.getProfileMap(LazyProfileRegistry.java:193)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.getProfileMap(LazyProfileRegistry.java:184)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.containsProfile(LazyProfileRegistry.java:165)
+	at org.eclipse.equinox.internal.p2.engine.ProfilePreferences.containsProfile(ProfilePreferences.java:110)
+	at org.eclipse.equinox.internal.p2.engine.ProfilePreferences.load(ProfilePreferences.java:253)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:370)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:623)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:629)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:629)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:629)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.RootPreferences.getNode(RootPreferences.java:105)
+	at org.eclipse.core.internal.preferences.RootPreferences.node(RootPreferences.java:84)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.getSharedPreferences(AbstractRepositoryManager.java:518)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.restoreRepositories(AbstractRepositoryManager.java:1016)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.basicGetRepository(AbstractRepositoryManager.java:181)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:649)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.initializeMetadataRepository(RepositoryListener.java:104)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.<init>(RepositoryListener.java:59)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.DropinsRepositoryListener.<init>(DropinsRepositoryListener.java:82)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.watchDropins(Activator.java:540)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.start(Activator.java:173)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:774)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:767)
+	... 12 more
+Root exception:
+java.lang.IllegalStateException: Registry Directory not available: c:\Program Files\java-neon\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry.
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.getProfileMap(LazyProfileRegistry.java:193)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.getProfileMap(LazyProfileRegistry.java:184)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.containsProfile(LazyProfileRegistry.java:165)
+	at org.eclipse.equinox.internal.p2.engine.ProfilePreferences.containsProfile(ProfilePreferences.java:110)
+	at org.eclipse.equinox.internal.p2.engine.ProfilePreferences.load(ProfilePreferences.java:253)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:370)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:623)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:629)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:629)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:629)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.RootPreferences.getNode(RootPreferences.java:105)
+	at org.eclipse.core.internal.preferences.RootPreferences.node(RootPreferences.java:84)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.getSharedPreferences(AbstractRepositoryManager.java:518)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.restoreRepositories(AbstractRepositoryManager.java:1016)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.basicGetRepository(AbstractRepositoryManager.java:181)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:649)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.initializeMetadataRepository(RepositoryListener.java:104)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.<init>(RepositoryListener.java:59)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.DropinsRepositoryListener.<init>(DropinsRepositoryListener.java:82)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.watchDropins(Activator.java:540)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.start(Activator.java:173)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:774)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:767)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:724)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:932)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:309)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1600)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-05-08 10:53:25.161
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\giorg'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2017-05-08 10:53:25.992
+!MESSAGE Removing part descriptor with the 'org.eclipse.pde.api.tools.ui.views.apitooling.views.apitoolingview' id and the 'API Tools' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2017-05-08 10:53:26.006
+!MESSAGE Removing part descriptor with the 'org.eclipse.pde.runtime.RegistryBrowser' id and the 'Plug-in Registry' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2017-05-08 10:53:26.014
+!MESSAGE Removing part descriptor with the 'org.eclipse.pde.ui.PluginsView' id and the 'Plug-ins' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2017-05-08 10:53:26.024
+!MESSAGE Removing part descriptor with the 'org.eclipse.pde.ui.DependenciesView' id and the 'Plug-in Dependencies' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2017-05-08 10:53:26.035
+!MESSAGE Removing part descriptor with the 'org.eclipse.pde.ui.TargetPlatformState' id and the 'Target Platform State' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2017-05-08 10:53:26.045
+!MESSAGE Removing part descriptor with the 'org.eclipse.pde.ui.ImageBrowserView' id and the 'Plug-in Image Browser' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2017-05-08 10:53:26.054
+!MESSAGE Removing part descriptor with the 'org.eclipse.wb.core.StructureView' id and the 'Structure' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2017-05-08 10:53:26.064
+!MESSAGE Removing part descriptor with the 'org.eclipse.wb.core.PaletteView' id and the 'Palette' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2017-05-08 10:53:29.475
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: Connect to dev.eclipse.org:443 [dev.eclipse.org/198.41.30.200] failed: Read timed out. ; version: 2.0.4.v20170307-1435
+!STACK 0
+org.apache.http.conn.ConnectTimeoutException: Connect to dev.eclipse.org:443 [dev.eclipse.org/198.41.30.200] failed: Read timed out
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:134)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:290)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:259)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	... 16 more
+
+!ENTRY org.eclipse.oomph.setup.ui 4 0 2017-05-08 10:53:35.276
+!MESSAGE Registry Directory not available: c:\Program Files\java-neon\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry.
+!STACK 0
+java.lang.IllegalStateException: Registry Directory not available: c:\Program Files\java-neon\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry.
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.getProfileMap(LazyProfileRegistry.java:193)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.getProfileMap(LazyProfileRegistry.java:184)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.containsProfile(LazyProfileRegistry.java:165)
+	at org.eclipse.equinox.internal.p2.engine.ProfilePreferences.containsProfile(ProfilePreferences.java:110)
+	at org.eclipse.equinox.internal.p2.engine.ProfilePreferences.load(ProfilePreferences.java:253)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:370)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:623)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:629)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:629)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:629)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.RootPreferences.getNode(RootPreferences.java:105)
+	at org.eclipse.core.internal.preferences.RootPreferences.node(RootPreferences.java:84)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.getSharedPreferences(AbstractRepositoryManager.java:518)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.restoreRepositories(AbstractRepositoryManager.java:1016)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.getKnownRepositories(AbstractRepositoryManager.java:480)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.getKnownRepositories(CachingRepositoryManager.java:591)
+	at org.eclipse.oomph.p2.core.P2Util.getKnownRepositories(P2Util.java:82)
+	at org.eclipse.oomph.setup.p2.impl.P2TaskImpl.isNeeded(P2TaskImpl.java:600)
+	at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer.initNeededSetupTasks(SetupTaskPerformer.java:1809)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:675)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.access$5(SetupUIPlugin.java:414)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:253)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2017-05-08 10:54:45.600 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -data C:\Users\giorg\Desktop\Hecate -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.equinox.p2.reconciler.dropins 4 0 2017-05-08 10:54:46.602
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.start() of bundle org.eclipse.equinox.p2.reconciler.dropins.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:795)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:724)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:932)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:309)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1600)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+Caused by: java.lang.IllegalStateException: Registry Directory not available: c:\Program Files\java-neon\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry.
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.getProfileMap(LazyProfileRegistry.java:193)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.getProfileMap(LazyProfileRegistry.java:184)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.containsProfile(LazyProfileRegistry.java:165)
+	at org.eclipse.equinox.internal.p2.engine.ProfilePreferences.containsProfile(ProfilePreferences.java:110)
+	at org.eclipse.equinox.internal.p2.engine.ProfilePreferences.load(ProfilePreferences.java:253)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:370)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:623)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:629)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:629)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:629)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.RootPreferences.getNode(RootPreferences.java:105)
+	at org.eclipse.core.internal.preferences.RootPreferences.node(RootPreferences.java:84)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.getSharedPreferences(AbstractRepositoryManager.java:518)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.restoreRepositories(AbstractRepositoryManager.java:1016)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.basicGetRepository(AbstractRepositoryManager.java:181)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:649)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.initializeMetadataRepository(RepositoryListener.java:104)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.<init>(RepositoryListener.java:59)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.DropinsRepositoryListener.<init>(DropinsRepositoryListener.java:82)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.watchDropins(Activator.java:540)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.start(Activator.java:173)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:774)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:767)
+	... 12 more
+Root exception:
+java.lang.IllegalStateException: Registry Directory not available: c:\Program Files\java-neon\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry.
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.getProfileMap(LazyProfileRegistry.java:193)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.getProfileMap(LazyProfileRegistry.java:184)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.containsProfile(LazyProfileRegistry.java:165)
+	at org.eclipse.equinox.internal.p2.engine.ProfilePreferences.containsProfile(ProfilePreferences.java:110)
+	at org.eclipse.equinox.internal.p2.engine.ProfilePreferences.load(ProfilePreferences.java:253)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:370)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:623)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:629)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:629)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:629)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.RootPreferences.getNode(RootPreferences.java:105)
+	at org.eclipse.core.internal.preferences.RootPreferences.node(RootPreferences.java:84)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.getSharedPreferences(AbstractRepositoryManager.java:518)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.restoreRepositories(AbstractRepositoryManager.java:1016)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.basicGetRepository(AbstractRepositoryManager.java:181)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:649)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.initializeMetadataRepository(RepositoryListener.java:104)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.<init>(RepositoryListener.java:59)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.DropinsRepositoryListener.<init>(DropinsRepositoryListener.java:82)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.watchDropins(Activator.java:540)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.start(Activator.java:173)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:774)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:767)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:724)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:932)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:309)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1600)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-05-08 10:54:53.067
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\giorg'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.oomph.setup.ui 4 0 2017-05-08 10:54:55.086
+!MESSAGE Registry Directory not available: c:\Program Files\java-neon\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry.
+!STACK 0
+java.lang.IllegalStateException: Registry Directory not available: c:\Program Files\java-neon\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry.
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.getProfileMap(LazyProfileRegistry.java:193)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.getProfileMap(LazyProfileRegistry.java:184)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.containsProfile(LazyProfileRegistry.java:165)
+	at org.eclipse.equinox.internal.p2.engine.ProfilePreferences.containsProfile(ProfilePreferences.java:110)
+	at org.eclipse.equinox.internal.p2.engine.ProfilePreferences.load(ProfilePreferences.java:253)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:370)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:623)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:629)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:629)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:629)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.RootPreferences.getNode(RootPreferences.java:105)
+	at org.eclipse.core.internal.preferences.RootPreferences.node(RootPreferences.java:84)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.getSharedPreferences(AbstractRepositoryManager.java:518)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.restoreRepositories(AbstractRepositoryManager.java:1016)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.getKnownRepositories(AbstractRepositoryManager.java:480)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.getKnownRepositories(CachingRepositoryManager.java:591)
+	at org.eclipse.oomph.p2.core.P2Util.getKnownRepositories(P2Util.java:82)
+	at org.eclipse.oomph.setup.p2.impl.P2TaskImpl.isNeeded(P2TaskImpl.java:600)
+	at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer.initNeededSetupTasks(SetupTaskPerformer.java:1809)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:675)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.access$5(SetupUIPlugin.java:414)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:253)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2017-05-08 11:23:07.627 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -data C:\Users\giorg\Desktop\Hecate -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.equinox.p2.reconciler.dropins 4 0 2017-05-08 11:23:08.623
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.start() of bundle org.eclipse.equinox.p2.reconciler.dropins.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:795)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:724)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:932)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:309)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1600)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+Caused by: java.lang.IllegalStateException: Registry Directory not available: c:\Program Files\java-neon\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry.
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.getProfileMap(LazyProfileRegistry.java:193)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.getProfileMap(LazyProfileRegistry.java:184)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.containsProfile(LazyProfileRegistry.java:165)
+	at org.eclipse.equinox.internal.p2.engine.ProfilePreferences.containsProfile(ProfilePreferences.java:110)
+	at org.eclipse.equinox.internal.p2.engine.ProfilePreferences.load(ProfilePreferences.java:253)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:370)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:623)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:629)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:629)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:629)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.RootPreferences.getNode(RootPreferences.java:105)
+	at org.eclipse.core.internal.preferences.RootPreferences.node(RootPreferences.java:84)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.getSharedPreferences(AbstractRepositoryManager.java:518)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.restoreRepositories(AbstractRepositoryManager.java:1016)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.basicGetRepository(AbstractRepositoryManager.java:181)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:649)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.initializeMetadataRepository(RepositoryListener.java:104)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.<init>(RepositoryListener.java:59)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.DropinsRepositoryListener.<init>(DropinsRepositoryListener.java:82)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.watchDropins(Activator.java:540)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.start(Activator.java:173)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:774)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:767)
+	... 12 more
+Root exception:
+java.lang.IllegalStateException: Registry Directory not available: c:\Program Files\java-neon\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry.
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.getProfileMap(LazyProfileRegistry.java:193)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.getProfileMap(LazyProfileRegistry.java:184)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.containsProfile(LazyProfileRegistry.java:165)
+	at org.eclipse.equinox.internal.p2.engine.ProfilePreferences.containsProfile(ProfilePreferences.java:110)
+	at org.eclipse.equinox.internal.p2.engine.ProfilePreferences.load(ProfilePreferences.java:253)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:370)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:623)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:629)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:629)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:629)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.RootPreferences.getNode(RootPreferences.java:105)
+	at org.eclipse.core.internal.preferences.RootPreferences.node(RootPreferences.java:84)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.getSharedPreferences(AbstractRepositoryManager.java:518)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.restoreRepositories(AbstractRepositoryManager.java:1016)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.basicGetRepository(AbstractRepositoryManager.java:181)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:649)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.initializeMetadataRepository(RepositoryListener.java:104)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.RepositoryListener.<init>(RepositoryListener.java:59)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.DropinsRepositoryListener.<init>(DropinsRepositoryListener.java:82)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.watchDropins(Activator.java:540)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.start(Activator.java:173)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:774)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:767)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:724)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:932)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:309)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1600)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-05-08 11:23:14.518
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\giorg'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.oomph.setup.ui 4 0 2017-05-08 11:23:16.471
+!MESSAGE Registry Directory not available: c:\Program Files\java-neon\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry.
+!STACK 0
+java.lang.IllegalStateException: Registry Directory not available: c:\Program Files\java-neon\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry.
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.getProfileMap(LazyProfileRegistry.java:193)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.getProfileMap(LazyProfileRegistry.java:184)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry.containsProfile(LazyProfileRegistry.java:165)
+	at org.eclipse.equinox.internal.p2.engine.ProfilePreferences.containsProfile(ProfilePreferences.java:110)
+	at org.eclipse.equinox.internal.p2.engine.ProfilePreferences.load(ProfilePreferences.java:253)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:370)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:623)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:629)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:629)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:629)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.RootPreferences.getNode(RootPreferences.java:105)
+	at org.eclipse.core.internal.preferences.RootPreferences.node(RootPreferences.java:84)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.getSharedPreferences(AbstractRepositoryManager.java:518)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.restoreRepositories(AbstractRepositoryManager.java:1016)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.getKnownRepositories(AbstractRepositoryManager.java:480)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.getKnownRepositories(CachingRepositoryManager.java:591)
+	at org.eclipse.oomph.p2.core.P2Util.getKnownRepositories(P2Util.java:82)
+	at org.eclipse.oomph.setup.p2.impl.P2TaskImpl.isNeeded(P2TaskImpl.java:600)
+	at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer.initNeededSetupTasks(SetupTaskPerformer.java:1809)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:675)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.access$5(SetupUIPlugin.java:414)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:253)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
