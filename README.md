@@ -11,7 +11,8 @@ book on clean code. Moreover, I consider rules derived from my own experience as
 To run DBsea please consider the following steps:
 
 1. Download wordnet from here http://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz 
-and set it in your machines path in this manner "C:\WordNet\3.0"
+and set the path, in Window machines, in this manner "C:\WordNet\3.0". If you are using linux 
+you can change manually the path from the class WordnetCheck. 
 
 2. Set the external references consisting of the jars below: 
 	*antlr-runtime-4.4.jar 
