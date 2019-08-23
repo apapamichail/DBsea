@@ -27,20 +27,20 @@ public class Worker extends SwingWorker<SchemaStyleAnalysis, Integer> {
 
 	
 	protected SchemaStyleAnalysis doInBackground() throws Exception {
-		SchemaStyleAnalysis differencesManager = new SchemaStyleAnalysis();
- 		checkTheDifferencesInHistory(differencesManager);
-		return differencesManager;
+		SchemaStyleAnalysis styleAnalyzer = new SchemaStyleAnalysis();
+ 		checkTheDifferencesInHistory(styleAnalyzer);
+		return styleAnalyzer;
 		
 	}
 
 	/**
-	 * @param differencesManager
+	 * @param styleAnalyzer
 	 * @return
 	 * @throws IOException
 	 */
-	private void checkTheDifferencesInHistory(SchemaStyleAnalysis differencesManager) throws IOException {
+	private void checkTheDifferencesInHistory(SchemaStyleAnalysis styleAnalyzer) throws IOException {
 
-		differencesManager.traversePaths(folder);
+		styleAnalyzer.traversePaths(folder);
 			
 	}
 

@@ -1,0 +1,25 @@
+Kendall
+Rules,Total objects,Lower case,Underscore case with lower case,USP,AUV,NBP
+Total objects,,,,,,,,,,,,,,,,,,,,,,,,,
+Lower case,0.0,,,,,,,,,,,,,,,,,,,,,,,,
+Underscore case with lower case,0.0,-1.0,,,,,,,,,,,,,,,,,,,,,
+USP,-1.0,0.0,0.0,,,,,,,,,,,,,
+AUV,-1.0,0.0,0.0,1.0,,,,,
+NBP,1.0,0.0,0.0,-1.0,-1.0,,
+Spearman
+Rules,Total objects,Lower case,Underscore case with lower case,USP,AUV,NBP
+Total objects,,,,,,,,,,,,,,,,,,,,,,,,,
+Lower case,0.0,,,,,,,,,,,,,,,,,,,,,,,,
+Underscore case with lower case,-0.0,-1.0,,,,,,,,,,,,,,,,,,,,,
+USP,-1.0,0.0,0.0,,,,,,,,,,,,,
+AUV,-1.0,0.0,0.0,1.0,,,,,
+NBP,1.0,0.0,-0.0,-1.0,-1.0,,
+
+Measurement/Rule,Total objects,Lower case,Upper case,Pascal case,Underscore case with lower case,Underscore Case with upper case,UnderscoreCase with some other case,UTC,UPL,SWL,EWL,UMW,USP,CIS,ACC,ARW,ACU,AUS,ASC,AUD,AUV,AII,DNC,NBP
+Skewness,1.23,0.0,0,0,0.0,0,0,0,0,0,0,0,-1.23,0,0,0,0,0,0,0,-1.23,0,0,1.23
+Median,227.0,0.35,0.0,0.0,0.65,0.0,0.0,1.0,1.0,1.0,1.0,0.37,0.34,0.59,1.0,1.0,1.0,1.0,1.0,1.0,0.59,1.0,1.0,0.85
+Standard Deviation,1.46,0.01,0.0,0.0,0.01,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Mode,227.0,0.35,0.0,0.0,0.65,0.0,0.0,1.0,1.0,1.0,1.0,0.37,0.34,0.59,1.0,1.0,1.0,1.0,1.0,1.0,0.59,1.0,1.0,0.85
+Average,227.86,0.35,0.0,0.0,0.65,0.0,0.0,1.0,1.0,1.0,1.0,0.37,0.34,0.59,1.0,1.0,1.0,1.0,1.0,1.0,0.59,1.0,1.0,0.85
+Max,230.0,0.36,0.0,0.0,0.66,0.0,0.0,1.0,1.0,1.0,1.0,0.37,0.34,0.59,1.0,1.0,1.0,1.0,1.0,1.0,0.59,1.0,1.0,0.86
+Min,227.0,0.34,0.0,0.0,0.64,0.0,0.0,1.0,1.0,1.0,1.0,0.37,0.33,0.59,1.0,1.0,1.0,1.0,1.0,1.0,0.58,1.0,1.0,0.85
